@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>You Invoice</title>
+<meta name="description" content="You Invoice: LINE bot ช่วยบันทึกรายรับ-รายจ่ายและเก็บหลักฐานลง Google Drive ของคุณเอง / A LINE bot that records income and expenses and saves receipts to your own Google Drive.">
+<style>
+  :root { --bg:#ffffff; --ink:#1f2937; --mute:#6b7280; --line:#e5e7eb; --accent:#16a34a; --card:#f9fafb; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0f172a; --ink:#e5e7eb; --mute:#94a3b8; --line:#1e293b; --accent:#4ade80; --card:#111c33; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.7 system-ui, -apple-system, "Segoe UI", "Noto Sans Thai", sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: 2rem; margin: 0 0 4px; }
+  h2 { font-size: 1.15rem; margin: 32px 0 8px; }
+  p, li { color: var(--ink); }
+  .sub { color: var(--mute); margin: 0 0 24px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px 20px; margin: 12px 0; }
+  a { color: var(--accent); }
+  footer { margin-top: 40px; color: var(--mute); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>You Invoice</h1>
+  <p class="sub">บอท LINE ช่วยทำสมุดบัญชีรายรับ-รายจ่าย · A LINE bot for simple bookkeeping</p>
+
+  <div class="card">
+    <p><strong>ทำอะไรได้</strong></p>
+    <ul>
+      <li>พิมพ์ข้อความ ส่งรูปสลิป/ใบเสร็จ/แคปหน้าจอ แล้วบอทบันทึกเป็นรายรับ-รายจ่ายให้ ตรวจและแก้ไขได้ทุกช่องก่อนยืนยัน</li>
+      <li>ออกรายงานเงินสดรับ-จ่าย (PDF / Excel) แบบเดือนต่อเดือน</li>
+      <li>เชื่อมต่อ <strong>Google Drive ของคุณเอง</strong> เพื่อเก็บรูป/ไฟล์หลักฐานเป็นโฟลเดอร์ ปี/เดือน (ไม่บังคับ)</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <p><strong>What it does</strong></p>
+    <ul>
+      <li>Send a message, a receipt photo or a screenshot in LINE; the bot turns it into an income/expense entry that you can review and edit before confirming.</li>
+      <li>Generates monthly cash-in/cash-out reports (PDF / Excel).</li>
+      <li>Optionally connects to <strong>your own Google Drive</strong> to store your receipt files in year/month folders.</li>
+    </ul>
+  </div>
+
+  <h2>การเข้าถึง Google Drive / Google Drive access</h2>
+  <p>บอทขอสิทธิ์ <code>drive.file</code> เท่านั้น ซึ่งหมายถึงเห็นและแก้ไขได้เฉพาะไฟล์และโฟลเดอร์ที่บอทสร้างเอง ไม่เห็นไฟล์อื่นใน Drive ของคุณ และคุณตัดการเชื่อมต่อได้ทุกเมื่อ<br>
+  The app requests only the <code>drive.file</code> scope: it can only see and modify the files and folders it creates itself, never your other Drive files, and you can disconnect at any time.</p>
+
+  <p><a href="privacy.html">นโยบายความเป็นส่วนตัว / Privacy Policy</a></p>
+
+  <footer>
+    <p>เครื่องมือช่วยจัดระเบียบเอกสาร ไม่ใช่คำปรึกษาด้านภาษีหรือบัญชี ควรตรวจสอบรายงานก่อนนำไปใช้ยื่นภาษี<br>
+    An organizing aid, not tax or accounting advice. Please review reports before using them for tax filing.</p>
+    <p>ติดต่อ / Contact: <a href="mailto:[YOUR-CONTACT-EMAIL]">[YOUR-CONTACT-EMAIL]</a></p>
+  </footer>
+</main>
+</body>
+</html>

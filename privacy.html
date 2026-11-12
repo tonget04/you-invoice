@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · You Invoice</title>
+<style>
+  :root { --bg:#ffffff; --ink:#1f2937; --mute:#6b7280; --line:#e5e7eb; --accent:#16a34a; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0f172a; --ink:#e5e7eb; --mute:#94a3b8; --line:#1e293b; --accent:#4ade80; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.75 system-ui, -apple-system, "Segoe UI", "Noto Sans Thai", sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 1.8rem; margin: 0 0 4px; }
+  h2 { font-size: 1.1rem; margin: 28px 0 6px; padding-top: 12px; border-top: 1px solid var(--line); }
+  .mute { color: var(--mute); }
+  a { color: var(--accent); }
+  li { margin: 2px 0; }
+  .en { color: var(--mute); }
+</style>
+</head>
+<body>
+<main>
+  <p><a href="index.html">← You Invoice</a></p>
+  <h1>นโยบายความเป็นส่วนตัว / Privacy Policy</h1>
+  <p class="mute">You Invoice (บอท LINE ช่วยบันทึกรายรับ-รายจ่าย) · ผู้ดูแลระบบ / Operator: [YOUR-NAME] · ปรับปรุงล่าสุด / Last updated: [DATE]</p>
+
+  <h2>1. ข้อมูลที่เก็บ <span class="en">/ Data we collect</span></h2>
+  <ul>
+    <li>รหัสผู้ใช้ LINE (LINE user ID) และข้อความ รูปภาพ ไฟล์ PDF หรือเสียงที่คุณส่งให้บอท</li>
+    <li>รายการรายรับ-รายจ่ายที่บันทึก และข้อมูลผู้ประกอบการที่คุณกรอกเอง (ชื่อ ชื่อสถานประกอบการ เลขบัตรประชาชน/เลขผู้เสียภาษี และสถานะ VAT) ซึ่งเป็นข้อมูลที่คุณเลือกกรอก และจำเป็นเฉพาะการออกหัวรายงาน</li>
+    <li>ถ้าคุณเชื่อมต่อ Google Drive: อีเมล Google ของคุณ และโทเค็นการเข้าถึง (เก็บแบบเข้ารหัส)</li>
+    <li class="en">LINE user ID and the messages, images, PDFs or voice you send; the entries you record; optional business profile details you enter yourself (name, business name, national/tax ID, VAT status) used only for report headers; and, if you connect Google Drive, your Google account email and an access token (stored encrypted).</li>
+  </ul>
+
+  <h2>2. ใช้ข้อมูลอย่างไร <span class="en">/ How we use it</span></h2>
+  <ul>
+    <li>เพื่อบันทึกรายการ แสดงสรุป สร้างรายงาน PDF/Excel และเก็บรูปหลักฐานให้คุณเท่านั้น</li>
+    <li>เราไม่ขาย ไม่เช่า และไม่นำข้อมูลของคุณไปใช้เพื่อการโฆษณา</li>
+    <li class="en">Solely to record entries, show summaries, generate your reports and keep your receipt files. We do not sell or rent your data or use it for advertising.</li>
+  </ul>
+
+  <h2>3. ข้อมูลจาก Google (Google user data)</h2>
+  <ul>
+    <li>บอทขอสิทธิ์ <code>https://www.googleapis.com/auth/drive.file</code> พร้อมอีเมล (<code>openid email</code>) เท่านั้น</li>
+    <li>ใช้เพื่อสร้างโฟลเดอร์ <em>You Invoice / ชื่อธุรกิจ / ปี / เดือน / รวมหลักฐาน</em> และอัปโหลดไฟล์หลักฐานที่คุณยืนยันแล้วลงใน Drive ของคุณ บอทเข้าถึงได้เฉพาะไฟล์/โฟลเดอร์ที่บอทสร้างเอง ไม่อ่านหรือแก้ไขไฟล์อื่นของคุณ</li>
+    <li>ข้อมูลที่ได้จาก Google ถูกแยกตามผู้ใช้แต่ละคน ไม่ถูกส่งต่อให้บุคคลที่สาม และไม่ถูกใช้เพื่อวัตถุประสงค์อื่นนอกจากการให้บริการข้างต้น</li>
+    <li class="en">You Invoice's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. The app requests only <code>drive.file</code> and your email, accesses only files it creates, keeps each user's data separate, and does not transfer it to third parties.</li>
+  </ul>
+
+  <h2>4. ผู้ประมวลผลข้อมูลภายนอก <span class="en">/ Third-party processors</span></h2>
+  <ul>
+    <li><strong>LINE</strong> — ช่องทางส่งข้อความระหว่างคุณกับบอท</li>
+    <li><strong>Google Gemini API</strong> — ใช้อ่านข้อความ/รูป/เสียงเพื่อสกัดเป็นรายการ เฉพาะเมื่อ OCR ในเครื่องอ่านไม่ได้และคุณกดให้ AI อ่าน (หรือเปิดโหมด AI อัตโนมัติ) เนื้อหาที่ส่งคือข้อความ/รูปนั้นเท่านั้น และตามเงื่อนไขของ Google ข้อมูลที่ส่งผ่าน Gemini API ระดับฟรีอาจถูก Google นำไปปรับปรุงผลิตภัณฑ์ของ Google (ดูเงื่อนไขของ Google) หากไม่ต้องการ ให้ใช้โหมด "AI ถามก่อน" (ค่าเริ่มต้น) แล้วเลือกพิมพ์ยอดเองหรือถ่ายรูปใหม่แทนการส่งให้ AI</li>
+    <li><strong>Cloudflare</strong> — ช่องทางเชื่อมต่ออินเทอร์เน็ตเข้าสู่เซิร์ฟเวอร์ (ส่งผ่านข้อมูลเท่านั้น)</li>
+    <li class="en">LINE (messaging), Google Gemini API (reads text/images/voice to extract entries, only when local OCR cannot and you choose AI reading or enable automatic mode; under Google's terms, content sent through the free tier of the Gemini API may be used by Google to improve its products), Cloudflare (network transport only).</li>
+  </ul>
+
+  <h2>5. การจัดเก็บและความปลอดภัย <span class="en">/ Storage and security</span></h2>
+  <ul>
+    <li>ข้อมูลเก็บบนเซิร์ฟเวอร์ส่วนตัวของผู้ดูแลระบบ โทเค็น Google เก็บแบบเข้ารหัส (AES-256-GCM) และข้อมูลสำรองถูกเข้ารหัสก่อนเก็บ (เก็บย้อนหลังไม่เกิน 30 วัน)</li>
+    <li class="en">Data is stored on the operator's own private server. Google tokens are encrypted (AES-256-GCM); backups are encrypted and kept for at most 30 days.</li>
+  </ul>
+
+  <h2>6. การเก็บรักษาและการลบข้อมูล <span class="en">/ Retention and deletion</span></h2>
+  <ul>
+    <li>คุณลบเองได้ทุกเมื่อในแชต: พิมพ์ <code>ล้างข้อมูล</code> (เลือกล้างบางส่วนหรือทุกอย่างของคุณ) หรือ <code>ลบล่าสุด</code> / ปุ่มลบบนการ์ดรายการ</li>
+    <li>ตัดการเชื่อมต่อ Google: พิมพ์ <code>ตัดการเชื่อมต่อ Google</code> หรือถอนสิทธิ์ที่ <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> ไฟล์ที่บอทเคยอัปโหลดไว้ใน Drive ของคุณจะยังอยู่ และคุณลบเองได้</li>
+    <li>ขอลบข้อมูลทั้งหมดหรือสอบถามได้ทางอีเมลด้านล่าง</li>
+    <li class="en">You can delete your data at any time in the chat (<code>ล้างข้อมูล</code> = "clear data"), and disconnect Google in the chat or at myaccount.google.com/permissions; files already uploaded to your Drive remain yours to delete. You can also email us to request deletion.</li>
+  </ul>
+
+  <h2>7. สิทธิของคุณ <span class="en">/ Your rights</span></h2>
+  <p>คุณมีสิทธิขอเข้าถึง แก้ไข ลบ หรือคัดค้านการประมวลผลข้อมูลส่วนบุคคลของคุณตามกฎหมายคุ้มครองข้อมูลส่วนบุคคล (PDPA) โดยติดต่อได้ที่อีเมลด้านล่าง<br>
+  <span class="en">You may request access, correction, deletion or objection under applicable data-protection law by contacting us below.</span></p>
+
+  <h2>8. ข้อจำกัด <span class="en">/ Disclaimer</span></h2>
+  <p>You Invoice เป็นเครื่องมือช่วยจัดระเบียบเอกสาร ไม่ใช่คำปรึกษาด้านภาษีหรือบัญชี ผู้ใช้ควรตรวจสอบความถูกต้องของรายงานก่อนนำไปใช้ยื่นภาษี<br>
+  <span class="en">An organizing aid, not tax or accounting advice. Please verify reports before filing.</span></p>
+
+  <h2>9. ติดต่อ <span class="en">/ Contact</span></h2>
+  <p>[YOUR-NAME] · <a href="mailto:[YOUR-CONTACT-EMAIL]">[YOUR-CONTACT-EMAIL]</a></p>
+</main>
+</body>
+</html>
